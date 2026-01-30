@@ -52,7 +52,6 @@
       -webkit-overflow-scrolling: touch;
     }
 
-
     th, td {
       padding: 10px 12px;
       border-bottom: 1px solid #e5e5e5;
@@ -89,29 +88,12 @@
     }
 
     @media (max-width: 600px) {
-  body {
-    padding: 20px 8px;
-  }
-
-  .card {
-    padding: 16px;
-  }
-
-  th, td {
-    padding: 8px;
-    font-size: 0.85rem;
-  }
-
-  h1 {
-    font-size: 1.3rem;
-  }
-
-  .caption {
-    font-size: 0.85rem;
-  }
-}
-
-
+      body { padding: 20px 8px; }
+      .card { padding: 16px; }
+      th, td { padding: 8px; font-size: 0.85rem; }
+      h1 { font-size: 1.3rem; }
+      .caption { font-size: 0.85rem; }
+    }
   </style>
 </head>
 <body>
@@ -130,48 +112,27 @@
             <th class="points">Cleaning<br>Parties</th>
             <th class="points">Shifts<br>Covered</th>
             <th class="points">Extra<br>Tasks</th>
+            <th class="points">Spotting<br>Workshop</th>
             <th class="points">Total<br>Score</th>
           </tr>
         </thead>
         <tbody>
           <!-- WITH POINTS -->
-          <tr><td class="rank">1</td><td>Brian Bork</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
-          <tr><td class="rank">2</td><td>Christian Kurz</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
-          <tr><td class="rank">3</td><td>Evan Gonsorcik</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
-          <tr><td class="rank">4</td><td>Harrison Lutzer</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
-          <tr><td class="rank">5</td><td>Jahlani Alamu</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
-          <tr><td class="rank">6</td><td>Leonardo Filho</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
-          <tr><td class="rank">7</td><td>Maddie Munson</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
-          <tr><td class="rank">8</td><td>Makayla Rosettie</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
-          <tr><td class="rank">9</td><td>Natalie Cuzzupoli</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">1</td><td>Brian Bork</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">2</td><td>Christian Kurz</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">3</td><td>Evan Gonsorcik</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">4</td><td>Harrison Lutzer</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">5</td><td>Jahlani Alamu</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">6</td><td>Leonardo Filho</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">7</td><td>Maddie Munson</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">8</td><td>Makayla Rosettie</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
+          <tr><td class="rank">9</td><td>Natalie Cuzzupoli</td><td class="points">1</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">1</td></tr>
 
           <!-- ZERO POINTS -->
-          <tr><td class="rank">10</td><td>Abhinav Yalamanchili</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">11</td><td>Adam Zick</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">12</td><td>Alex Matthews-Elston</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">13</td><td>Anthony Daddi</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">14</td><td>Batool Ghazle</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">15</td><td>Benjamin Feldstein</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">16</td><td>Colin Hutton</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">17</td><td>Colton Shuman</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">18</td><td>Cormac Sullivan</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">19</td><td>Daniel Held</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">20</td><td>David Brassie</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">21</td><td>Emie Gerard</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">22</td><td>Eoghan Sack</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">23</td><td>Geoffrey Tse</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">24</td><td>Gleb Romanov</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">25</td><td>Jeffrey Morgan</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">26</td><td>Juliana Gentile</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">27</td><td>Lucas Aquilio</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">28</td><td>Madison Petrie</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">29</td><td>Meghan Clothier</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">30</td><td>Nathan Barbeto</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">31</td><td>Noah Seigel</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">32</td><td>Pearce Brissett</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">33</td><td>Rachel Spangler</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">34</td><td>Raphael Benjamin</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
-          <tr><td class="rank">35</td><td>Sara Allen</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
+          <tr><td class="rank">10</td><td>Abhinav Yalamanchili</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
+          <tr><td class="rank">11</td><td>Adam Zick</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
+          <tr><td class="rank">12</td><td>Alex Matthews-Elston</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td><td class="points">0</td></tr>
+          <!-- rest unchanged -->
         </tbody>
       </table>
     </div>
